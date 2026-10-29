@@ -1,0 +1,56 @@
+/* Estilos do projeto. Não precisa de internet, biblioteca ou instalação. */
+:root {
+  /* DESAFIO OPCIONAL: mude a cor principal e veja o resultado. */
+  --verde: #24584b;
+  --fundo: #faf6ed;
+  --texto: #302b25;
+  --suave: #625b51;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--fundo); color: var(--texto); font-family: Arial, sans-serif; line-height: 1.6; }
+a { color: inherit; }
+a:focus-visible { outline: 3px solid #b16628; outline-offset: 6px; }
+img { display: block; max-width: 100%; height: auto; }
+.cabecalho, main, footer { width: min(1120px, 90%); margin-inline: auto; }
+.cabecalho { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding-block: 24px; border-bottom: 1px solid #ded6c9; }
+.marca { font: bold 26px Georgia, serif; text-decoration: none; }
+.marca span { display: block; font: 10px Arial, sans-serif; letter-spacing: 2px; margin-top: 9px; }
+nav { display: flex; gap: 24px; flex-wrap: wrap; }
+nav a { text-decoration: none; font-size: 14px; }
+nav a:hover { text-decoration: underline; }
+.destaque { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; padding-block: 60px; }
+.destaque img { border-radius: 120px 120px 12px 12px; }
+.etiqueta { font-size: 11px; font-weight: bold; letter-spacing: 2px; color: var(--verde); }
+h1 { font: 64px/1.08 Georgia, serif; margin: 20px 0; }
+h2 { font: 36px/1.2 Georgia, serif; margin: 12px 0 28px; }
+h3 { font: bold 23px Georgia, serif; margin: 0 0 12px; }
+p { color: var(--suave); }
+.botao { display: inline-flex; gap: 20px; background: var(--verde); color: white; padding: 13px 22px; border-radius: 5px; text-decoration: none; margin-top: 16px; }
+.botao:hover { filter: brightness(1.15); }
+.secao { padding-block: 36px; scroll-margin-top: 20px; }
+.produtos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.produto { background: #fffdf8; border: 1px solid #e4ddcf; border-radius: 12px; overflow: hidden; }
+.produto-texto { padding: 24px; }
+.produto-texto p { font-size: 14px; }
+.produto-texto .preco { color: var(--verde); font-size: 23px; font-weight: bold; margin-bottom: 0; }
+.sobre { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; border-bottom: 1px solid #ded6c9; margin-top: 30px; }
+.horarios { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+dl { margin: 0; }
+dl div { display: flex; justify-content: space-between; gap: 20px; padding: 12px 0; border-bottom: 1px solid #ded6c9; }
+dd { margin: 0; font-weight: bold; }
+footer { border-top: 1px solid #ded6c9; padding-block: 24px; font-size: 12px; }
+footer p { margin: 4px 0; }
+.pular { position: absolute; left: 12px; top: -100px; padding: 12px; background: white; z-index: 2; }
+.pular:focus { top: 12px; }
+/* Em telas estreitas, os blocos ficam um abaixo do outro. */
+@media (max-width: 700px) {
+ .cabecalho { flex-direction: column; align-items: flex-start; }
+ .destaque, .sobre, .horarios { grid-template-columns: 1fr; gap: 24px; }
+ .destaque { padding-block: 36px; }
+ h1 { font-size: 46px; }
+ h2 { font-size: 30px; }
+ .produtos { grid-template-columns: 1fr; }
+ .destaque img { max-height: 280px; width: 100%; object-fit: cover; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
