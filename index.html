@@ -3,17 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- DESAFIO 1: altere também o nome na aba do navegador. -->
-  <title>Café da Esquina | Cardápio</title>
-  <meta name="description" content="Cardápio de uma cafeteria fictícia: cafés, acompanhamentos e horários.">
+  <title>Café Aurora | Cardápio</title>
+  <meta name="description" content="Café Aurora: café coado, croissant, bolo de chocolate e horários de atendimento.">
   <!-- O CSS está na mesma pasta deste HTML. -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="pular" href="#cardapio">Pular para o cardápio</a>
   <header class="cabecalho">
-    <!-- DESAFIO 1: troque este nome pelo nome da cafeteria da dupla. -->
-    <a class="marca" href="#inicio">Café Jhonsons<span>CAFETERIA · FEITO COM CALMA</span></a>
+    <a class="marca" href="#inicio">Café Aurora<span>CAFETERIA · FEITO COM CALMA</span></a>
     <nav aria-label="Navegação principal">
       <a href="#cardapio">Cardápio</a>
       <a href="#sobre">Sobre</a>
@@ -28,32 +26,30 @@
         <p>Café passado na hora e acompanhamentos para aproveitar sem pressa.</p>
         <a class="botao" href="#cardapio">Conheça o cardápio <span aria-hidden="true">↓</span></a>
       </div>
-      <img src="imagens/cafe.svg" alt="Ilustração de uma xícara de café quente sobre um pires" width="600" height="400">
+      <img src="cafe.svg" alt="Ilustração de uma xícara de café quente sobre um pires" width="600" height="400">
     </section>
     <section id="cardapio" class="secao" aria-labelledby="titulo-cardapio">
       <p class="etiqueta">ESCOLHA SUA PAUSA</p>
       <h2 id="titulo-cardapio">Nosso cardápio</h2>
       <div class="produtos">
         <article class="produto">
-          <!-- O caminho e o nome do arquivo devem coincidir com a pasta imagens. -->
-          <img src="imagens/cafe.svg" alt="Xícara de café" width="600" height="400">
+          <img src="cafe.svg" alt="Xícara de café" width="600" height="400">
           <div class="produto-texto">
             <h3>Café coado</h3>
             <p>Preparado na hora, com aroma intenso e sabor acolhedor.</p>
-            <!-- DESAFIO 2: altere R$ 8,00 para R$ 10,00, salve e atualize o navegador. -->
             <p class="preco">R$ 8,00</p>
           </div>
         </article>
         <article class="produto">
-          <img src="imagens/croissant.svg" alt="Ilustração de um croissant dourado" width="600" height="400">
+          <img src="croissant.svg" alt="Ilustração de um croissant dourado" width="600" height="400">
           <div class="produto-texto">
             <h3>Croissant</h3>
             <p>Massa leve e amanteigada, dourada por fora e macia por dentro.</p>
-            <p class="preco">R$ 12,00</p>
+            <p class="preco">R$ 15,00</p>
           </div>
         </article>
         <article class="produto">
-          <img src="imagens/bolo.svg" alt="Ilustração de uma fatia de bolo de chocolate" width="600" height="400">
+          <img src="bolo.svg" alt="Ilustração de uma fatia de bolo de chocolate" width="600" height="400">
           <div class="produto-texto">
             <h3>Bolo de chocolate</h3>
             <p>Uma fatia generosa para acompanhar seu café favorito.</p>
@@ -68,8 +64,7 @@
     </section>
     <section id="horarios" class="horarios secao" aria-labelledby="titulo-horarios">
       <div><p class="etiqueta">QUANDO APARECER</p><h2 id="titulo-horarios">Horários de atendimento</h2></div>
-      <!-- DESAFIO OPCIONAL: altere os horários mantendo o formato. -->
-      <dl><div><dt>Segunda a sexta</dt><dd>8h às 18h</dd></div><div><dt>Sábado</dt><dd>8h às 13h</dd></div><div><dt>Domingo</dt><dd>Fechado</dd></div></dl>
+      <dl><div><dt>Segunda a sexta</dt><dd>8h às 18h</dd></div><div><dt>Sábado</dt><dd>9h às 15h</dd></div><div><dt>Domingo</dt><dd>Fechado</dd></div></dl>
     </section>
   </main>
   <footer><p>Projeto fictício para a disciplina APV — Publicação de Sites.</p><p>Cardápio demonstrativo. Não recebe pedidos ou pagamentos.</p></footer>
